@@ -52,11 +52,11 @@ Thực thi file `host_case_pcap.py`:
 
     sudo python3 host_case_pcap.py
 
-![img](0)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image0.png?raw=true)
 
 Mở file `host_case_pcap` trên Wireshark:
 
-![img](1)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image1.png?raw=true)
 
 Phân tích file pcap này, kỹ thuật giấu tin trong trường "Host" (viết hoa/viết thường) sẽ hoạt động như sau:
 
@@ -66,23 +66,23 @@ Sau khi tìm được giá trị bits của thông điệp, trên máy client, t
 
     python3 decode_bits.py
 
-![img](2)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image2.png?raw=true)
 
 Ghi giá trị chuỗi bits và thông điệp giải mã tìm được vào file answer.txt:
 
     nano answer.txt
 
-![img](3)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image3.png?raw=true)
 
 Trên máy client, thực thi file `header_order_pcap.py`:
 
     sudo python3 header_order_pcap.py
 
-![img](4)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image4.png?raw=true)
 
 Trên Wireshark, mở file header_order.pcap:
 
-![img](5)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image5.png?raw=true)
 
 Kỹ thuật giấu tin trong thứ tự headers hoạt động theo quy tắc sau:
 
@@ -94,11 +94,11 @@ Trên máy client, thực thi file multi_header_pcap.py:
 
     sudo python3 multi_header_pcap.py
 
-![img](6)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image6.png?raw=true)
 
 Trên Wireshark, mở file multi_header_pcap:
 
-![img](7)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image7.png?raw=true)
 
 Tiếp tục phân tích các gói tin, tìm ra giá trị bits của thông điệp được giấu. Kỹ thuật giấu tin này sẽ kết hợp nhiều header fields lại, (Ví dụ: Host header và Accept-Encoding header) để giấu tin. Sau khi tìm được giá trị bits của thông điệp, thực thi file decode_bits.py để tìm thông điệp gốc.
 
@@ -108,11 +108,11 @@ Trên máy client, thực thi file combined_tech_pcap.py:
 
     sudo python3 combined_tech_pcap.py
 
-![img](8)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image8.png?raw=true)
 
 Trên Wireshark, mở file combined_tech_pcap.py:
 
-![img](9)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image9.png?raw=true)
 
 Kỹ thuật này sẽ kết hợp cả phương thức của HTTP request và HTTP headers để giấu tin (VD: GET protocol và User-Agent hay POST protocol và User-Agent...). Tiếp tục phân tích các gói tin, tìm ra giá trị bits của thông điệp được giấu.
 
@@ -126,11 +126,11 @@ Trên máy client, thực thi file noise_traffic_pcap.py:
 
     sudo python3 noise_traffic_pcap.py
 
-![img](10)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image10.png?raw=true)
 
 Trên Wireshark, mở file noise_traffic.pcap:
 
-![img](11)
+![img](https://github.com/DucThinh47/ptit-http-headers-steg-code/blob/main/images/image11.png?raw=true)
 
 Tiếp tục phân tích các gói tin, tìm ra giá trị bits của thông điệp được giấu. Sau khi tìm được giá trị bits của thông điệp, thực thi file decode_bits.py để tìm thông điệp gốc. Ghi kết quả vào file answer.txt
 
